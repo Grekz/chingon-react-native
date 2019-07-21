@@ -1,9 +1,10 @@
 import styled from '@emotion/native'
 import { ThemeProvider } from 'emotion-theming'
 import React from 'react'
-import { Picker } from 'react-native'
+import { ScrollView } from 'react-native'
 import ButtonStories from './src/components/atoms/Button/button.stories'
 import CardStories from './src/components/atoms/Card/card.stories'
+import DividerStories from './src/components/atoms/Divider/divider.stories'
 import TextStories from './src/components/atoms/Text/text.stories'
 
 const theme = {
@@ -15,11 +16,14 @@ const theme = {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <StyledView>
-        <TextStories />
-        <ButtonStories />
-        <CardStories />
-      </StyledView>
+      <ScrollView>
+        <StyledView>
+          <TextStories />
+          <ButtonStories />
+          <CardStories />
+          <DividerStories />
+        </StyledView>
+      </ScrollView>
     </ThemeProvider>
   )
 }
