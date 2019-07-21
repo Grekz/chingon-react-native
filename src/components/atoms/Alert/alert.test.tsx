@@ -13,7 +13,11 @@ describe('<Alert />', () => {
   })
   it('should render correctly with title', () => {
     expect(
-      mount(<Alert><Text>Show me</Text></Alert>)
+      mount(
+        <Alert>
+          <Text>Show me</Text>
+        </Alert>
+      )
     ).toHaveLength(1)
   })
 })
