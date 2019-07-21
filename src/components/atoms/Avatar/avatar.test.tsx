@@ -13,6 +13,8 @@ describe('<Card />', () => {
     expect(mount(<Avatar />)).toHaveLength(1)
   })
   it('should render correctly with title', () => {
-    expect(mount(<Avatar uri="https://randomuser.me/api/portraits/men/35.jpg" />)).toHaveLength(1)
+    expect(
+      mount(<Avatar uri="https://randomuser.me/api/portraits/men/35.jpg" />)
+    ).toHaveLength(1)
   })
 })
