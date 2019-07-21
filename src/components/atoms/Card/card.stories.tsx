@@ -6,7 +6,7 @@ import Text, { textType } from '../Text'
 const CardStories = () => (
   <StyledView>
     <StyledView>
-      <Text textType={textType.H2}>Atom|Button</Text>
+      <Text textType={textType.H2}>Atom|Card</Text>
     </StyledView>
     <StyledView>
       <Card title="Default with title" />
