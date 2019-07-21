@@ -8,6 +8,7 @@ import BadgeStories from './src/components/atoms/Badge/badge.stories'
 import ButtonStories from './src/components/atoms/Button/button.stories'
 import CardStories from './src/components/atoms/Card/card.stories'
 import DividerStories from './src/components/atoms/Divider/divider.stories'
+import InputStories from './src/components/atoms/Input/input.stories'
 import TextStories from './src/components/atoms/Text/text.stories'
 
 const theme = {
@@ -21,6 +22,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <ScrollView>
         <StyledView>
+          <InputStories />
           <AlertStories />
           <BadgeStories />
           <AvatarStories />
