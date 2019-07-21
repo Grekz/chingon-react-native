@@ -1,6 +1,5 @@
 import styled from '@emotion/native'
 import React from 'react'
-import { Image } from 'react-native'
 
 const Avatar = ({ uri, ...props }) => (
   <StyledAvatar {...props}>
