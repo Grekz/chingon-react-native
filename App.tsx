@@ -13,7 +13,9 @@ const theme = {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <TextStories/>  
+      <StyledView>
+        <TextStories/>  
+      </StyledView>
     </ThemeProvider>
   );
 }

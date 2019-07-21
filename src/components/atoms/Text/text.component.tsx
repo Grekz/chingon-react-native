@@ -2,7 +2,7 @@ import React from 'react'
 import styled from '@emotion/native'
 import normalize from '../../../helpers/normalizeText'
 
-const Text = props => <StyledText {...props}/>
+const Text = props => <StyledText {...props} />
 
 const textType = {
     H1: 'H1',
@@ -11,18 +11,16 @@ const textType = {
     H4: 'H4',
     DEFAULT: 'DEFAULT'
 }
-const fontWeight = 'bold'
-
 const ATTRS = {
     [textType.DEFAULT] : {fontSize: 16, fontWeight: 'normal'},
-    [textType.H1] : {fontSize: 40, fontWeight},
-    [textType.H2] : {fontSize: 34, fontWeight},
-    [textType.H3] : {fontSize: 28, fontWeight},
-    [textType.H4] : {fontSize: 24, fontWeight}
+    [textType.H1] : {fontSize: 40, fontWeight:'bold'},
+    [textType.H2] : {fontSize: 34, fontWeight:'bold'},
+    [textType.H3] : {fontSize: 28, fontWeight:'bold'},
+    [textType.H4] : {fontSize: 24, fontWeight:'bold'}
 }
 
 const StyledText = styled.Text`
-    font-size: ${props => normalize(ATTRS[props.textType].fontSize)};
+    font-size: ${props => `${normalize(ATTRS[props.textType].fontSize)}px`};
     font-weight: ${props => ATTRS[props.textType].fontWeight};
 `
 
