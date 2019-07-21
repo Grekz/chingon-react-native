@@ -3,6 +3,7 @@ import { ThemeProvider } from 'emotion-theming'
 import React from 'react'
 import { Picker } from 'react-native'
 import ButtonStories from './src/components/atoms/Button/button.stories'
+import CardStories from './src/components/atoms/Card/card.stories'
 import TextStories from './src/components/atoms/Text/text.stories'
 
 const theme = {
@@ -17,6 +18,7 @@ function App() {
       <StyledView>
         <TextStories />
         <ButtonStories />
+        <CardStories />
       </StyledView>
     </ThemeProvider>
   )

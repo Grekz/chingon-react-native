@@ -16,13 +16,13 @@ const ButtonStories = () => (
         title="Small|Outline"
         buttonSize={buttonSize.SMALL}
         buttonType={buttonType.OUTLINE}
-        fontColor='#333'
+        fontColor="#333"
       />
     </StyledView>
     <StyledView>
       <Button
         title="Large|Link"
-        fontColor='#333'
+        fontColor="#333"
         buttonSize={buttonSize.LARGE}
         buttonType={buttonType.LINK}
       />
