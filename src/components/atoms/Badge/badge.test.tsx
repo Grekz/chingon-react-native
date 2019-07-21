@@ -13,8 +13,6 @@ describe('<Badge />', () => {
     expect(mount(<Badge />)).toHaveLength(1)
   })
   it('should render correctly with title', () => {
-    expect(
-      mount(<Badge>99+</Badge>)
-    ).toHaveLength(1)
+    expect(mount(<Badge>99+</Badge>)).toHaveLength(1)
   })
 })
