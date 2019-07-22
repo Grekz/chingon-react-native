@@ -16,6 +16,7 @@ import ListItemStories from './src/components/atoms/ListItem/listItem.stories'
 import ProgressStories from './src/components/atoms/Progress/progress.stories'
 import SocialIconStories from './src/components/atoms/SocialIcon/socialIcon.stories'
 import TextStories from './src/components/atoms/Text/text.stories'
+import BreadcrumbsStories from './src/components/molecules/Breadcrumbs/breadcrumbs.stories'
 import HeaderStories from './src/components/molecules/Header/header.stories'
 import ListStories from './src/components/molecules/List/list.stories'
 import ModalStories from './src/components/molecules/Modal/modal.stories'
@@ -32,6 +33,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <ScrollView>
         <StyledView>
+          <BreadcrumbsStories />
           <HeaderStories />
           <ListStories />
           <ListItemStories />
