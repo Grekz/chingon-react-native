@@ -1,7 +1,7 @@
 import styled from '@emotion/native'
 import React from 'react'
 
-const List = ({ items, ...props }) => (
+const Header = ({ items, ...props }) => (
   <StyledView {...props}>
     <StyleadStatusBar />
     {items.map(li => (
@@ -19,8 +19,8 @@ const StyledView = styled.View`
   justify-content: space-between;
 `
 
-List.defaultProps = {
+Header.defaultProps = {
   items: [null],
 }
 
-export default List
+export default Header
