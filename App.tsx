@@ -10,6 +10,7 @@ import ButtonStories from './src/components/atoms/Button/button.stories'
 import CardStories from './src/components/atoms/Card/card.stories'
 import DividerStories from './src/components/atoms/Divider/divider.stories'
 import InputStories from './src/components/atoms/Input/input.stories'
+import SocialIconStories from './src/components/atoms/SocialIcon/socialIcon.stories'
 import TextStories from './src/components/atoms/Text/text.stories'
 import ModalStories from './src/components/molecules/Modal/modal.stories'
 import SliderStories from './src/components/molecules/Slider/slider.stories'
@@ -25,6 +26,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <ScrollView>
         <StyledView>
+          <SocialIconStories />
           <SliderStories />
           <ModalStories />
           <InputStories />
