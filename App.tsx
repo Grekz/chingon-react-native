@@ -11,6 +11,7 @@ import CardStories from './src/components/atoms/Card/card.stories'
 import DividerStories from './src/components/atoms/Divider/divider.stories'
 import IconStories from './src/components/atoms/Icon/icon.stories'
 import InputStories from './src/components/atoms/Input/input.stories'
+import ProgressStories from './src/components/atoms/Progress/progress.stories'
 import SocialIconStories from './src/components/atoms/SocialIcon/socialIcon.stories'
 import TextStories from './src/components/atoms/Text/text.stories'
 import ModalStories from './src/components/molecules/Modal/modal.stories'
@@ -27,6 +28,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <ScrollView>
         <StyledView>
+          <ProgressStories />
           <IconStories />
           <SocialIconStories />
           <SliderStories />
