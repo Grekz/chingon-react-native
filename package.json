@@ -21,7 +21,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.jsx": [
+    "src/**/*.tsx": [
       "prettier --write",
       "git add",
       "jest --bail --findRelatedTests"
