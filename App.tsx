@@ -8,6 +8,7 @@ import AvatarStories from './src/components/atoms/Avatar/avatar.stories'
 import BadgeStories from './src/components/atoms/Badge/badge.stories'
 import ButtonStories from './src/components/atoms/Button/button.stories'
 import CardStories from './src/components/atoms/Card/card.stories'
+import CheckboxStories from './src/components/atoms/Checkbox/checkbox.stories'
 import DividerStories from './src/components/atoms/Divider/divider.stories'
 import IconStories from './src/components/atoms/Icon/icon.stories'
 import InputStories from './src/components/atoms/Input/input.stories'
@@ -28,6 +29,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <ScrollView>
         <StyledView>
+          <CheckboxStories />
           <ProgressStories />
           <IconStories />
           <SocialIconStories />
