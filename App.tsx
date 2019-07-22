@@ -12,6 +12,7 @@ import CheckboxStories from './src/components/atoms/Checkbox/checkbox.stories'
 import DividerStories from './src/components/atoms/Divider/divider.stories'
 import IconStories from './src/components/atoms/Icon/icon.stories'
 import InputStories from './src/components/atoms/Input/input.stories'
+import ListItemStories from './src/components/atoms/ListItem/listItem.stories'
 import ProgressStories from './src/components/atoms/Progress/progress.stories'
 import SocialIconStories from './src/components/atoms/SocialIcon/socialIcon.stories'
 import TextStories from './src/components/atoms/Text/text.stories'
@@ -29,6 +30,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <ScrollView>
         <StyledView>
+          <ListItemStories />
           <CheckboxStories />
           <ProgressStories />
           <IconStories />
