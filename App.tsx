@@ -12,6 +12,7 @@ import DividerStories from './src/components/atoms/Divider/divider.stories'
 import InputStories from './src/components/atoms/Input/input.stories'
 import TextStories from './src/components/atoms/Text/text.stories'
 import ModalStories from './src/components/molecules/Modal/modal.stories'
+import SliderStories from './src/components/molecules/Slider/slider.stories'
 
 const theme = {
   backgroundColor: '#f0ead6',
@@ -24,6 +25,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <ScrollView>
         <StyledView>
+          <SliderStories />
           <ModalStories />
           <InputStories />
           <AlertStories />

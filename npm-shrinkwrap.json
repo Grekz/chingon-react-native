@@ -2872,6 +2872,11 @@
       "resolved": "https://registry.npmjs.org/@react-native-community/netinfo/-/netinfo-2.0.10.tgz",
       "integrity": "sha512-NrIzyLe0eSbhgMnHl2QdSEhaA7yXh6p9jzMomfUa//hoTXE+xbObGDdiWWSQm2bnXnZJg8XCU3AB9qzvqcuLnA=="
     },
+    "@react-native-community/slider": {
+      "version": "2.0.0-rc.1",
+      "resolved": "https://registry.npmjs.org/@react-native-community/slider/-/slider-2.0.0-rc.1.tgz",
+      "integrity": "sha512-hdqQavGovI5M9NjCj4q4SPXyYOEHpBGXLIHBFETyL0S/B96hb09MXZAhOxsPYYs8KamYSKh2IYKwZ8yEiikNSg=="
+    },
     "@react-navigation/core": {
       "version": "3.4.2",
       "resolved": "https://registry.npmjs.org/@react-navigation/core/-/core-3.4.2.tgz",
