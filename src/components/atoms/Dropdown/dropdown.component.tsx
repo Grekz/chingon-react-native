@@ -14,9 +14,7 @@ const Dropdown = ({ selectedValue, options, ...props }) => (
   </StyledPicker>
 )
 const { Item } = Picker
-const StyledItem = styled(Item)`
-  background-color: ${props => props.theme.optionButton};
-`
+const StyledItem = styled(Item)``
 const StyledPicker = styled.Picker`
   width: 90%;
   border: 1px solid white;
