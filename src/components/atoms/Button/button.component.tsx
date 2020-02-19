@@ -13,8 +13,8 @@ const Button = ({ title, children, fontColor, ...props }) => (
         {title}
       </Text>
     ) : (
-        <>{children}</>
-      )}
+      <>{children}</>
+    )}
   </StyledButton>
 )
 
