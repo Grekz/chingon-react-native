@@ -1,6 +1,0 @@
-diff a/src/components/molecules/List/list.test.tsx b/src/components/molecules/List/list.test.tsx	(rejected hunks)
-@@ -16,3 +16 @@ describe('<ListItem />', () => {
--    expect(
--      mount(<List items={[<Text>Some</Text>]} />)
--    ).toHaveLength(1)
-+    expect(mount(<List items={[<Text>Some</Text>]} />)).toHaveLength(1)
