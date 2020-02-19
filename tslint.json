@@ -1,0 +1,24 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:latest",
+    "tslint-react",
+    "tslint-eslint-rules",
+    "tslint-config-prettier",
+    "tslint-plugin-prettier"
+  ],
+  "jsRules": {},
+  "rulesDirectory": [],
+  "rules": {
+    "prettier": [
+      true
+    ]
+  },
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**/*.*",
+      "dist/**/*.*",
+      "src/**/*.test.tsx"
+    ]
+  }
+}
