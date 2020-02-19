@@ -2,6 +2,9 @@ import styled from '@emotion/native'
 import { ThemeProvider } from 'emotion-theming'
 import React from 'react'
 import { ScrollView } from 'react-native'
+import AlertStories from './src/components/atoms/Alert/alert.stories'
+import AvatarStories from './src/components/atoms/Avatar/avatar.stories'
+import BadgeStories from './src/components/atoms/Badge/badge.stories'
 import ButtonStories from './src/components/atoms/Button/button.stories'
 import CardStories from './src/components/atoms/Card/card.stories'
 import DividerStories from './src/components/atoms/Divider/divider.stories'
@@ -18,6 +21,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <ScrollView>
         <StyledView>
+          <AlertStories />
+          <BadgeStories />
+          <AvatarStories />
           <TextStories />
           <ButtonStories />
           <CardStories />

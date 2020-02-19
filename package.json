@@ -10,7 +10,8 @@
     "test:live": "jest --watch",
     "test:coverage": "jest --coverage",
     "prettier": "prettier --write \"{,!(node_modules|dist|build|coverage)/**/}*.{js,jsx,ts,tsx}\"",
-    "pre-commit": "npm run tslint:fix && npm run prettier && npm run test",
+    "pre-commit": "npm run tslint:fix && npm run prettier && npm run test && lint-staged",
+    "lint-staged": "lint-staged",
     "tslint": "tslint --project tsconfig.json",
     "tslint:fix": "tslint --project tsconfig.json --fix"
   },
@@ -18,6 +19,13 @@
     "hooks": {
       "pre-commit": "npm run pre-commit"
     }
+  },
+  "lint-staged": {
+    "src/**/*.jsx": [
+      "prettier --write",
+      "git add",
+      "jest --bail --findRelatedTests"
+    ]
   },
   "jest": {
     "preset": "react-native",
@@ -52,6 +60,7 @@
     "jest-emotion": "^10.0.14",
     "jest-environment-enzyme": "^7.0.2",
     "jest-enzyme": "^7.0.2",
+    "lint-staged": "^9.2.0",
     "prettier": "^1.18.2",
     "tslint": "^5.17.0",
     "tslint-config-prettier": "^1.18.0",
