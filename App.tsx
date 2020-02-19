@@ -10,6 +10,7 @@ import ButtonStories from './src/components/atoms/Button/button.stories'
 import CardStories from './src/components/atoms/Card/card.stories'
 import CheckboxStories from './src/components/atoms/Checkbox/checkbox.stories'
 import DividerStories from './src/components/atoms/Divider/divider.stories'
+import DropdownStories from './src/components/atoms/Dropdown/dropdown.stories'
 import IconStories from './src/components/atoms/Icon/icon.stories'
 import InputStories from './src/components/atoms/Input/input.stories'
 import ListItemStories from './src/components/atoms/ListItem/listItem.stories'
@@ -17,6 +18,7 @@ import ProgressStories from './src/components/atoms/Progress/progress.stories'
 import SocialIconStories from './src/components/atoms/SocialIcon/socialIcon.stories'
 import TextStories from './src/components/atoms/Text/text.stories'
 import BreadcrumbsStories from './src/components/molecules/Breadcrumbs/breadcrumbs.stories'
+import ButtonGroupStories from './src/components/molecules/ButtonGroup/buttonGroup.stories'
 import HeaderStories from './src/components/molecules/Header/header.stories'
 import ListStories from './src/components/molecules/List/list.stories'
 import ModalStories from './src/components/molecules/Modal/modal.stories'
@@ -33,6 +35,8 @@ function App() {
     <ThemeProvider theme={theme}>
       <ScrollView>
         <StyledView>
+          <ButtonGroupStories />
+          <DropdownStories />
           <BreadcrumbsStories />
           <HeaderStories />
           <ListStories />
